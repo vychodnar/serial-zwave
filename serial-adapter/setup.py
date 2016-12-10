@@ -1,5 +1,11 @@
 from setuptools import setup, find_packages
+import re
 
+version = re.search(
+    '^__version__\s*=\s*"(.*)"',
+    open('bootstrap/bootstrap.py').read(),
+    re.M
+    ).group(1)
 
 with open('README.rst') as f:
     readme = f.read()
@@ -9,7 +15,7 @@ with open('../LICENSE') as f:
 
 setup(
     name='serial_adapter',
-    version='0.0.1',
+    version=version,
     description='Serial open zwave adapter package.',
     long_description=readme,
     author='Michal Valovcik',
