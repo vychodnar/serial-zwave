@@ -1,1 +1,1 @@
-nose
+nose click

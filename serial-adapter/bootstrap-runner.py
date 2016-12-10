@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Convenience wrapper for running bootstrap directly from source tree."""
 
 
